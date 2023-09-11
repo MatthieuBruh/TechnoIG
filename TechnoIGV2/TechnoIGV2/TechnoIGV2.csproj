@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B9FC6A7-AAF1-48A2-881E-E67064732C20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TechnoIGV2</RootNamespace>
+    <AssemblyName>TechnoIGV2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\program files (x86)\microsoft visual studio\2019\enterprise\common7\ide\extensions\mhmrznev.3o1\Assemblies\DataProviders\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionEmploye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionEmploye.Designer.cs">
+      <DependentUpon>FrmGestionEmploye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHistoriqueCommandesFourni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistoriqueCommandesFourni.Designer.cs">
+      <DependentUpon>FrmHistoriqueCommandesFourni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListeEntites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListeEntites.Designer.cs">
+      <DependentUpon>FrmListeEntites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProduitLimites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProduitLimites.Designer.cs">
+      <DependentUpon>FrmProduitLimites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionClients.Designer.cs">
+      <DependentUpon>FrmGestionClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProfil.Designer.cs">
+      <DependentUpon>FrmProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRechercherClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRechercherClient.Designer.cs">
+      <DependentUpon>FrmRechercherClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPanier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPanier.Designer.cs">
+      <DependentUpon>FrmPanier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecherche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecherche.Designer.cs">
+      <DependentUpon>FrmRecherche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStatistiques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStatistiques.Designer.cs">
+      <DependentUpon>FrmStatistiques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIContainer.Designer.cs">
+      <DependentUpon>MDIContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmGestionEmploye.resx">
+      <DependentUpon>FrmGestionEmploye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHistoriqueCommandesFourni.resx">
+      <DependentUpon>FrmHistoriqueCommandesFourni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListeEntites.resx">
+      <DependentUpon>FrmListeEntites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProduitLimites.resx">
+      <DependentUpon>FrmProduitLimites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionClients.resx">
+      <DependentUpon>FrmGestionClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProfil.resx">
+      <DependentUpon>FrmProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRechercherClient.resx">
+      <DependentUpon>FrmRechercherClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPanier.resx">
+      <DependentUpon>FrmPanier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecherche.resx">
+      <DependentUpon>FrmRecherche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStatistiques.resx">
+      <DependentUpon>FrmStatistiques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIContainer.resx">
+      <DependentUpon>MDIContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
